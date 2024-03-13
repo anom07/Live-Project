@@ -1,0 +1,366 @@
+body {
+    padding-top: 70px; /* Height of navbar */
+    padding-bottom: 70px;
+  
+  }
+  .navBarImage{
+      height: 45px;
+  }
+  .navbarFlex{
+      background-color:#F0F2F5;
+      height: 100px;
+  }
+  .navbarItemFlex{
+      display: flex;
+      justify-content: end;
+  }
+  /* Styling the brand logo */
+  img{
+    object-fit: cover;
+  }
+
+  .carouselFlex{
+    display: flex !important;
+    overflow: scroll !important;
+    flex-direction: row  !important;
+    justify-content: space-around  !important;
+    align-content: flex-start  !important;
+    flex-wrap: wrap  !important;
+
+  }
+.theamColor{
+    background-color:#F0F2F5;
+
+}
+
+.textCenter{
+    display: flex !important;
+    justify-content: center  !important;
+    align-content: center  !important;
+
+}
+
+ 
+
+
+
+  .cardFlex{
+    width: 200px;
+    margin: 100px;
+
+  }
+
+
+
+  #myCarousel {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    /* .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    } */
+
+    /* .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    } */
+
+    /* .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    } */
+
+    /* .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    } */
+}
+
+
+
+
+
+
+.list-group.help-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin: 0;
+    .faq-list {
+      display: block;
+      top: auto;
+      margin: 0 0 32px;
+      border-radius: 2px;    
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+      .list-group-item {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 13px 16px;
+        background-color: #fff;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        color: #616161;
+        transition: background-color .2s;
+        i.mdi {
+          margin-right: 5px;
+          font-size: 18px;
+          position: relative;
+          top: 2px;
+        }
+        &:hover {
+          background-color: #f6f6f6;
+        }
+        &.active {
+          background-color: #f6f6f6;
+          font-weight: 700;
+          color: rgba(0,0,0,.87);        
+        }
+        &:last-of-type {
+          border-bottom-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .tab-content.panels-faq {
+    padding: 0;
+    border: 0;
+  }
+  
+  .panel.panel-help {
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+    padding-bottom: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 0 16px;
+    a[href^="#"],
+    a[href^="#"]:hover,
+    a[href^="#"]:focus {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .panel-heading {
+      background-color: #f6f6f6;
+      padding: 0 16px;
+      line-height: 48px;
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
+      color: rgba(0,0,0,.87);
+      h2 {      
+        margin: 0;
+        padding: 14px 0 14px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-transform: none;
+      }
+    }
+    .panel-body {
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      border-radius: 2px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      margin-top: 0;
+      p {
+        margin: 0 0 16px;
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  /* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #707373;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #292a2a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
+.logo-holder{
+  display: flex;
+}
+.logo-gallery{
+  float: right;
+  height: 100px;
+  width: 100px;
+  border-radius: 40%;
+  display: grid;
+  place-items: center;
+}
+.img-log{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.card{
+  border-radius: 20px !important;
+  border: gray solid 1px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  overflow: hidden;
+
+}
+
+.card:hover{
+  border: rgb(68, 68, 68) solid 1px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+
+
+
+
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%) !important;
+}
+
+
+
+.carousel-item {
+  transition: transform 1s ease-in-out !important; /* Add a transition for smooth animation */
+}
+
+
+

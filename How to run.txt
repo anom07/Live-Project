@@ -1,0 +1,11 @@
+To run this project !!!!
+
+1) keep files in same sequence 
+
+2) Outside folder there are 5 files .(Main files )
+
+3)Remaining files are in other folder.
+
+4) To run this project, open IDE (vs code) within all files then run index.html right click and show preview (you can also copy address bar link to any browser).
+
+@Amey
